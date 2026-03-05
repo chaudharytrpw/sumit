@@ -1,4 +1,5 @@
 "use client";
+import Disclaimer from "./component/Disclaimer";
 import DisclaimerPage from "./component/Disclaimerpage";
 import Header from "./component/Header";
 import Marquee from "./component/Marquee";
@@ -11,7 +12,6 @@ const gridLinks = [
     href: "https://cscregister.csccloud.in/",
     btn: "Register Now / अभी रजिस्टर करें",
   },
-
   {
     text: "(TEC)Telecenter Entrepreneur Course",
     href: "https://cscentrepreneur.in/register",
@@ -111,26 +111,31 @@ const gridLinks = [
 
 export default function OnlineUpdateSTM() {
   return (
-    <div className="bg-amber-50 min-h-screen">
+    <div className="bg-amber-50 min-h-screen flex flex-col">
+      {/* Header and Navigation */}
       <Header />
       {/* <Navbar /> */}
       <SocialButtons />
       <Marquee />
 
-      <main className="max-w-6xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4  rounded overflow-hidden shadow-lg">
+      {/* Service Grid */}
+      <main className="max-w-6xl mx-auto px-4 py-8 flex-1">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded overflow-hidden shadow-lg">
           {gridLinks.map((link, i) => (
             <a
               key={i}
               href={link.href}
-              className={`font-semibold text-white text-center text-xs sm:text-sm px-4 py-6 border border-gray-700 transition-all hover:bg-white hover:text-blue-600 hover:scale-[1.02] flex items-center justify-center bg-blue-600`}
+              className="font-semibold text-white text-center text-xs sm:text-sm px-4 py-6 border border-gray-700 transition-all hover:bg-white hover:text-blue-600 hover:scale-[1.02] flex items-center justify-center bg-blue-600 rounded"
             >
               {link.text}
             </a>
           ))}
         </div>
       </main>
+
+      {/* Disclaimer sections */}
       <DisclaimerPage />
+      <Disclaimer />
     </div>
   );
 }

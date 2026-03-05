@@ -6,21 +6,21 @@ const socialLinks = [
     icon: <FaYoutube />, 
     color: "bg-red-600 hover:bg-red-700", 
     border: "border-red-700",
-    href: "#"
+    href: "https://youtube.com/@sumitdigitalcreators?si=BPeYHjrCmCXPvQbT"
   },
   { 
     label: "Join Whatsapp Channel", 
     icon: <FaWhatsapp />, 
     color: "bg-green-600 hover:bg-green-700", 
     border: "border-green-700",
-    href: "#"
+    href: "https://whatsapp.com/channel/0029VafJ8IOCXC3KtwtNqE1P"
   },
   { 
     label: "Follow Us On Facebook", 
     icon: <FaFacebookF />, 
     color: "bg-blue-600 hover:bg-blue-700", 
     border: "border-blue-700",
-    href: "#"
+    href: "https://www.facebook.com/share/1AiBsAgKuc/"
   },
 ];
 
