@@ -8,18 +8,18 @@ export async function POST(req) {
       return new Response(JSON.stringify({ error: "Missing required fields" }), { status: 400 });
     }
 
-    // Create SMTP transporter
+    // Create SMTP transporter with hardcoded credentials
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: "sumitraza35@gmail.com", // your Gmail
+        pass: "mvwp zzze eawf waox",   // app password, not your real Gmail password
       },
     });
 
     await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: 'Sumitraza35@gmail.com',  // Receiving email
+      from: "sumitraza35@gmail.com", // use your Gmail directly
+      to: 'sumitraza35@gmail.com',   // recipient
       subject: subject || 'New Message from Contact Form',
       html: `
         <p><strong>Name:</strong> ${name}</p>
