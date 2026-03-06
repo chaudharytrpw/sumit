@@ -2,7 +2,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./component/Footer";
 import ScrollToTopButton from "./component/ScrollToTopButton0";
-import CustomCursor from "./component/CustomCursor";
 import Header from "./component/Header";
 import SocialButtons from "./component/SocialButtons";
 
@@ -30,7 +29,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <CustomCursor />
         <Header />
         <SocialButtons />
 
