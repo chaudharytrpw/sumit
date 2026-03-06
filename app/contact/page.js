@@ -281,7 +281,7 @@ export default function ContactPage() {
             <div className="ct-badge"><div className="ct-badge-dot" />Contact Us</div>
             <h1 className="ct-headline">हमसे <em>संपर्क करें</em></h1>
             <p className="ct-hero-sub">
-              नमस्कार दोस्तों, स्वागत है <strong style={{ color: "#22d3ee" }}>OnlineUpdates.com</strong> के Contact Us पेज पर!
+              नमस्कार दोस्तों, स्वागत है <strong style={{ color: "#22d3ee" }}>sevaupdates.com</strong> के Contact Us पेज पर!
             </p>
           </div>
         </section>
@@ -349,7 +349,7 @@ export default function ContactPage() {
             <div className="ct-thankyou">
               <p className="ct-thankyou-text">
                 हम आपके सवालों का जवाब <strong>जल्द से जल्द</strong> देने की कोशिश करेंगे।<br />
-                OnlineUpdates.com के साथ जुड़े रहें और सही जानकारी पाते रहें। <strong>धन्यवाद! 🙏</strong>
+                sevaupdates.com के साथ जुड़े रहें और सही जानकारी पाते रहें। <strong>धन्यवाद! 🙏</strong>
               </p>
             </div>
           </FadeIn>

@@ -52,46 +52,66 @@ const latestUpdates = [
   },
 ];
 
-const latestJobs = [
+const latestDownloads = [
   {
     id: 1,
-    text: "RRB Group D Vacancy 2026 : Apply Online for 21997 Vacancies, Check Eligibility, Age Limit, Selection Process & Salary?",
+    text: "Voter ID Card Download 2026 : ऑनलाइन वोटर आईडी कार्ड कैसे डाउनलोड करें?",
   },
   {
     id: 2,
-    text: "Central Bank of India SO Vacancy 2026: Online Apply For 275 Posts, Qualification, Apply Date, Eligibility, Fee & Selection Process?",
+    text: "PAN Card Download Online : NSDL / UTI से ई-PAN कार्ड डाउनलोड कैसे करें?",
   },
   {
     id: 3,
-    text: "Bihar Police Constable Operator Vacancy 2026 Online Apply For 993 Posts, age, apply date, Eligibility & Selection Process?",
+    text: "Ayushman Card Download 2026 : आयुष्मान भारत कार्ड ऑनलाइन डाउनलोड कैसे करें?",
   },
   {
     id: 4,
-    text: "BTSC Dairy Field Officer Vacancy 2026 Online Apply For 92 Posts, age, apply date, Eligibility & Selection Process?",
+    text: "Aadhaar Card Download : आधार कार्ड PDF ऑनलाइन डाउनलोड कैसे करें?",
   },
   {
     id: 5,
-    text: "RRC WR Apprentice Vacancy 2026 Online Apply For 5349 Posts, Apply Date, Eligibility, Fee & Selection Process?",
+    text: "E Shram Card Download 2026 : ई-श्रम कार्ड डाउनलोड और प्रिंट कैसे करें?",
   },
   {
     id: 6,
-    text: "Delhi IHE DU Non Teaching Vacancy 2026: Online Apply for 10th, 12th & Graduates Pass Students?",
+    text: "ABC ID Card Download : Academic Bank of Credit ID कार्ड डाउनलोड कैसे करें?",
   },
   {
     id: 7,
-    text: "RBI Assistant Vacancy 2026 Online Apply For 650 Posts, Apply Date, Eligibility, Fee & Selection Process?",
+    text: "Caste Certificate Download : जाति प्रमाण पत्र ऑनलाइन डाउनलोड कैसे करें?",
   },
   {
     id: 8,
-    text: "India Post GDS Vacancy 2026 Form Correction For 28635 Posts – Notification (Out), Eligibility, Salary & Selection Process?",
+    text: "Income Certificate Download : आय प्रमाण पत्र डाउनलोड कैसे करें?",
   },
   {
     id: 9,
-    text: "Indian Army Agniveer Vacancy 2026 Online Apply for 25,000 Posts, age, apply date, Eligibility & Selection Process?",
+    text: "Residence Certificate Download : निवास प्रमाण पत्र ऑनलाइन डाउनलोड कैसे करें?",
   },
   {
     id: 10,
-    text: "Bihar District Court Attender Vacancy 2026 : 10वीं पास के लिए बिहार जिला कोर्ट में आई अटेन्डर की नई भर्ती, ऑनलाइन शुरू?",
+    text: "Birth Certificate Download : जन्म प्रमाण पत्र ऑनलाइन डाउनलोड कैसे करें?",
+  },
+  {
+    id: 11,
+    text: "Death Certificate Download : मृत्यु प्रमाण पत्र ऑनलाइन डाउनलोड कैसे करें?",
+  },
+  {
+    id: 12,
+    text: "Labour Card Download : लेबर कार्ड ऑनलाइन डाउनलोड कैसे करें?",
+  },
+  {
+    id: 13,
+    text: "Ration Card Download : बिहार राशन कार्ड ऑनलाइन डाउनलोड कैसे करें?",
+  },
+  {
+    id: 14,
+    text: "PM Kisan Beneficiary Status & Certificate Download कैसे करें?",
+  },
+  {
+    id: 15,
+    text: "Driving Licence Download : DigiLocker / Parivahan से DL डाउनलोड कैसे करें?",
   },
 ];
 
@@ -164,7 +184,7 @@ function SectionCard({ title, items, accentColor }) {
             ${isUpdate ? "text-blue-600 hover:text-blue-800" : "text-green-600 hover:text-green-800"}
           `}
         >
-          View All {isUpdate ? "Updates" : "Jobs"} →
+          View All {isUpdate ? "Updates" : ""} →
         </a>
       </div>
     </div>
@@ -184,8 +204,8 @@ export default function Disclaimerpage() {
           accentColor="update"
         />
         <SectionCard
-          title="Latest Jobs"
-          items={latestJobs}
+          title="Download ID Card & Certificate"
+          items={latestDownloads}
           accentColor="jobs"
         />
       </div>

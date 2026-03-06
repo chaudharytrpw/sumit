@@ -1,9 +1,13 @@
 const marqueeItems = [
-  "CSC ID REGISTRATION 2025 ऑनलाइन आवेदन करें",
-  "जाति,निवास,आय यहाँ से APPLY & DOWNLOAD करें",
-  "बिहार राशन कार्ड 2025 ऑनलाइन अप्लाई ऐसे करें",
-  "BIHAR POST MATRIC SCHOLARSHIP 2025 APPLY",
-  "VOTER ENUMERATION 2025 ONLINE APPLY",
+  "जाति प्रमाण पत्र ऑनलाइन आवेदन और डाउनलोड करें",
+  "निवास प्रमाण पत्र ऑनलाइन APPLY & DOWNLOAD",
+  "आय प्रमाण पत्र ऑनलाइन आवेदन कैसे करें",
+  "PAN CARD APPLY, CORRECTION और DOWNLOAD",
+  "VOTER ID CARD ONLINE APPLY और STATUS CHECK",
+  "CSC TEC REGISTRATION 2026 ऑनलाइन आवेदन करें",
+  "आयुष्मान भारत कार्ड ऑनलाइन बनाएं",
+  "आधार कार्ड UPDATE और DOWNLOAD प्रक्रिया",
+  "बिहार राशन कार्ड 2026 ऑनलाइन आवेदन करें",
 ];
 
 export default function Marquee() {

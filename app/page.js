@@ -1,10 +1,9 @@
 "use client";
 import Disclaimer from "./component/Disclaimer";
 import DisclaimerPage from "./component/Disclaimerpage";
-import Header from "./component/Header";
 import Marquee from "./component/Marquee";
-// import Navbar from "./component/Navbar";
-import SocialButtons from "./component/SocialButtons";
+
+
 
 const gridLinks = [
   {
@@ -26,7 +25,28 @@ const gridLinks = [
     text: "आधार DBT करें",
     href: "https://www.npci.org.in/",
     btn: "Apply Now",
+  }
+  ,
+    {
+    text: "Aadhaar Operator Registration (आधार ऑपरेटर पंजीकरण)",
+    href: "https://uidai.nseitexams.com/UIDAI/LoginAction_input.action",
+    btn: "Register Now / अभी पंजीकरण करें",
   },
+  {
+    text: "LMS ID & Password Registration (LMS आईडी और पासवर्ड पंजीकरण)",
+    href: "https://e-learning.uidai.gov.in/login/index.php", 
+    btn: "Register Now / अभी पंजीकरण करें",
+  },
+   {
+    text: "Pan Card Document Resize (पैन कार्ड डॉक्यूमेंट रिसाइज)",
+    href: "https://pancardresizer.com/", 
+    btn: "Resize Now / अभी रिसाइज करें",
+  }, {
+    text: "UTI Pan Card Download (UTI पैन कार्ड डाउनलोड)",
+    href: "https://www.pan.utiitsl.com/PAN_ONLINE/ePANCardHome",
+    btn: "Download Now / डाउनलोड करें",
+  }
+  ,
   {
     text: "फोटो रिसाइज सेवा (Photo Resize Service)",
     href: "https://image.pi7.org/",
@@ -106,16 +126,16 @@ const gridLinks = [
     text: "पुलिस सेवाएं (Police Services / FIR, Certificate)",
     href: "https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=12050016&UUID=714a9822-7089-4f86-9893-a2f83d3e3a67&directService=true&tempId=4236&grievDefined=0&serviceLinkRequired=No&userLoggedIn=N&source=CTZN&OWASP_CSRFTOKEN=9OWW-0Y48-ZTVU-Y302-RBV2-1AZ5-9UV6-BHRJ",
     btn: "Apply / Register / Check Status",
-  },
+  }
+
+
 ];
 
 export default function OnlineUpdateSTM() {
   return (
     <div className="bg-amber-50 min-h-screen flex flex-col">
       {/* Header and Navigation */}
-      <Header />
-      {/* <Navbar /> */}
-      <SocialButtons />
+      
       <Marquee />
 
       {/* Service Grid */}
